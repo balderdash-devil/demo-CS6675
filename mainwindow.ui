@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QWidget" name="simulationWidget" native="true">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -24,7 +24,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="widget_2" native="true">
+   <widget class="QWidget" name="resultWidget" native="true">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -57,7 +57,7 @@
      <string>Household Setting</string>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
+   <widget class="QSlider" name="noiseLevelSlider">
     <property name="geometry">
      <rect>
       <x>189</x>
@@ -66,11 +66,23 @@
       <height>29</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="sliderPosition">
+     <number>50</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>5</number>
+    </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider_2">
+   <widget class="QSlider" name="numRobotsSlider">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -79,8 +91,32 @@
       <height>29</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="minimum">
+     <number>2</number>
+    </property>
+    <property name="maximum">
+     <number>6</number>
+    </property>
+    <property name="singleStep">
+     <number>2</number>
+    </property>
+    <property name="sliderPosition">
+     <number>4</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>2</number>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">

@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+
+*.demo-CS6675.pro.user
+*.demo-CS6675.pro
